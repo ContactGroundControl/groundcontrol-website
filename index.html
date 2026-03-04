@@ -1,15 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Ground Control LLC</title>
-  <meta name="description" content="Site Control & Land Acquisition for Wind, Solar, Transmission and Energy Infrastructure">
+  <meta name="description" content="Site Control & Land Acquisition for Wind, Solar, BESS, Transmission & Pipeline." />
+  <style>
+    :root { --bg:#0b1220; --card:#0f1a30; --text:#eaf0ff; --muted:#b8c3e6; --accent:#66e3ff; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: radial-gradient(1200px 600px at 20% 0%, #1a2a55 0%, var(--bg) 55%); color:var(--text); }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 64px 20px; }
+    .top { display:flex; justify-content:space-between; align-items:center; gap:16px; }
+    .logo { font-weight:800; letter-spacing:.08em; text-transform:uppercase; font-size:14px; opacity:.9; }
+    .pill { border:1px solid rgba(255,255,255,.18); padding:10px 14px; border-radius:999px; color:var(--muted); font-size:13px; }
+    h1 { margin:36px 0 10px; font-size:44px; line-height:1.05; letter-spacing:-.02em; }
+    .sub { color:var(--muted); font-size:18px; line-height:1.5; max-width: 720px; }
+    .grid { display:grid; grid-template-columns: 1.2fr .8fr; gap:18px; margin-top:30px; }
+    .card { background: rgba(15,26,48,.78); border:1px solid rgba(255,255,255,.12); border-radius:18px; padding:22px; backdrop-filter: blur(8px); }
+    .kicker { color:var(--accent); font-weight:700; letter-spacing:.08em; text-transform:uppercase; font-size:12px; }
+    ul { margin:14px 0 0; padding:0 0 0 18px; color:var(--muted); }
+    li { margin:8px 0; }
+    .cta { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+    a.btn { display:inline-block; padding:12px 14px; border-radius:12px; text-decoration:none; font-weight:700; }
+    a.primary { background: var(--accent); color:#06101a; }
+    a.ghost { border:1px solid rgba(255,255,255,.18); color:var(--text); }
+    .small { color:var(--muted); font-size:13px; margin-top:10px; }
+    .footer { margin-top:26px; color:rgba(184,195,230,.8); font-size:12px; }
+    @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } h1{font-size:36px;} }
+  </style>
 </head>
-<body style="font-family: Arial; text-align:center; padding:80px;">
-  <h1>Ground Control LLC</h1>
-  <p>Site Control & Land Acquisition for Energy Infrastructure</p>
-  <p>Wind | Solar | BESS | Transmission | Pipeline</p>
-  <p>Serving IA, NE, KS, MO, SD & CO</p>
-  <p>Email: contact@groundcontrol-llc.com</p>
-  <p>Phone: 402-669-2419</p>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div class="logo">Ground Control LLC</div>
+      <div class="pill">IA · NE · KS · MO · SD · CO</div>
+    </div>
+
+    <h1>Site Control & Land Acquisition for Energy Infrastructure</h1>
+    <div class="sub">
+      Wind · Solar · BESS · Transmission · Pipeline<br/>
+      Fast, clean execution from first contact to recorded agreements.
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="kicker">Core Services</div>
+        <ul>
+          <li>Landowner outreach, negotiation, and portfolio buildout</li>
+          <li>Option/lease/easement execution & document control</li>
+          <li>Title/ownership verification support & curative tracking</li>
+          <li>Stakeholder coordination: survey, environmental, engineering</li>
+          <li>Field coverage with rapid turnarounds across the Midwest</li>
+        </ul>
+
+        <div class="cta">
+          <a class="btn primary" href="mailto:contact@groundcontrol-llc.com">Email: contact@groundcontrol-llc.com</a>
+          <a class="btn ghost" href="tel:14026692419">Call: 402-669-2419</a>
+        </div>
+        <div class="small">Prefer text? Email works best and we’ll respond quickly.</div>
+      </div>
+
+      <div class="card">
+        <div class="kicker">Working With</div>
+        <ul>
+          <li>Developers, EPCs, and land teams</li>
+          <li>Transmission & pipeline project groups</li>
+          <li>BESS and renewable infrastructure sponsors</li>
+        </ul>
+        <div class="footer">© <span id="y"></span> Ground Control LLC</div>
+      </div>
+    </div>
+  </div>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </body>
 </html>
